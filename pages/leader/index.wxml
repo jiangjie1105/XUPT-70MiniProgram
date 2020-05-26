@@ -1,0 +1,17 @@
+<view>
+	<view class="container">
+		<view class="item left" wx:for="{{lists}}" wx:key="id">
+			<view class="item_icon">
+				<image src="{{base}}{{item.avatar}}" mode="widthFix" />
+			</view>
+			<view class="item_detail">
+				<view class="detail_title">{{item.fullName}}</view>
+				<view class="detail_job">
+					{{item.position}}
+				</view>
+				<view class="detail_data">{{item.workingTime}}</view>
+			</view>
+		</view>
+	</view>
+</view>
+

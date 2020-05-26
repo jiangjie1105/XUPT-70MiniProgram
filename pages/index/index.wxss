@@ -1,0 +1,71 @@
+/**index.wxss**/
+
+page {
+    background-image: url("https://s1.ax1x.com/2020/03/28/GkM0nx.png");
+    background-repeat: no-repeat;
+    background-size: 100% 105%;
+    -moz-background-size: 100% 100%;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200rpx;
+    margin: -36rpx;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 50%;
+}
+
+.userinfo-school {
+    margin: 80rpx 0;
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+}
+
+.userinfo-unschool {
+    color: #ccc;
+}
+
+.userinfo-nickname {
+    color: #ffffff;
+}
+
+.usermotto {
+    margin-top: 200rpx;
+}
+
+input {
+    padding-left: 20rpx;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+.weui-cell__bd {
+    width: 80%!important;
+}
+
+.submit {
+    height: 82rpx;
+    line-height: 82rpx;
+    margin-top: -100rpx;
+}
+
+.back {
+    margin-top: 20rpx;
+    height: 82rpx;
+    border: 2rpx solid #ffffff;
+    line-height: 82rpx;
+}

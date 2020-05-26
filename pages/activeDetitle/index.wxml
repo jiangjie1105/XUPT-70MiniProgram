@@ -1,0 +1,26 @@
+<view>
+    <image src="{{base}}{{imgUrl}}" mode="widthFix" />
+</view>
+<!-- 详情 -->
+<view class="contents">
+   <view class="header">
+    <view class="title">{{activityTitle}} </view>
+        <view class="set middle" bindtap = "handleToComment">
+				<view class="share">
+					<image src="../../image/icon/message.png" mode="widthFix" />
+				</view>
+				<text>{{commentNums}}</text>
+			</view>
+			<view class="set left" bindtap = "handlelikeStart">
+				<view class="share">
+				<image class="img" src="{{!!status?url2:url1}}"  mode="widthFix" />
+				</view>
+				<text class="likenums">{{likeNums}}</text>
+			</view>
+   </view>
+    <view class="data">{{createTime}}</view> 
+	<view class="content">
+    {{contents}}
+        </view>
+</view>
+

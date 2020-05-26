@@ -1,0 +1,15 @@
+<view class='user-infomation' bindtap='bindAcountTap'>
+  <view>姓名：{{name}}</view>
+</view>
+<view class='user-infomation' bindtap='bindAcountTap'>
+  <view>账号：{{id}}</view>
+</view>
+<view class='user-infomation' bindtap='bindAcountTap'>
+  <view>性别：{{sex}}</view>
+</view>
+<view class='user-infomation' bindtap='bindAcountTap'>
+  <view>班级：{{class}}</view>
+</view>
+<view class='user-infomation' bindtap='bindAcountTap'>
+  <view>专业：{{profession}}</view>
+</view>

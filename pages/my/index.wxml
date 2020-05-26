@@ -1,0 +1,36 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取头像昵称
+    </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class='user-infomation' bindtap='bindAcountTap'>
+  <view class="box">
+  <view class="boximg"><image src="../../image/icon/account.png" mode="widthFix"/></view>
+  <text>账号信息</text>
+  </view>
+  <image   style='height:20rpx;width:20rpx; margin-right:30rpx;' src='../../image/icon/youjian.png'></image>
+</view>
+
+<view class='user-infomation' bindtap='bindBasicTap'>
+ <view class="box">
+  <view class="boximg"><image src="../../image/icon/account.png" mode="widthFix"/></view>
+  <text>基本信息</text>
+  </view>
+  <image style='height:20rpx;width:20rpx;margin-right:30rpx;' src='../../image/icon/youjian.png'></image>
+</view>
+
+<view class='user-infomation' bindtap='bindCallTap'>
+ <view class="box">
+  <view class="boximg"><image src="../../image/icon/phone.png" mode="widthFix"/></view>
+  <text>联系方式</text>
+  </view>
+  <image   style='height:20rpx;width:20rpx;margin-right:30rpx;' src='../../image/icon/youjian.png'></image>
+</view>

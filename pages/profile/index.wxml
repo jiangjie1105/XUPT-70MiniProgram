@@ -1,0 +1,106 @@
+<view class="header">
+	<image src="{{base}}{{imgUrl[1]}}" mode="widthFix" />
+</view>
+<view class="index_news">
+	<view class="news_title">
+		<text>······学校简介······</text>
+	</view>
+	<navigator url="../summary/index" >
+		<view class="news_content">
+		<view class="news_img">
+			<image src="{{base}}{{imgUrl[0]}}" mode="widthFix" />
+		</view>
+		<view class="news_detail">
+			<view class="detail_title">学校简介</view>
+			<view class="detail_main">{{schoolProfile}}</view>
+		</view>
+	</view>
+	</navigator>
+</view>
+<!-- 现任领导 -->
+<view class="index_news">
+	<view class="news_title">
+		<text>······现任领导······</text>
+	</view>
+	<view class="leader">
+		<view class="leader_1">
+			<text class="leader_job">党委书记</text>
+			<text class="leader_name">  杨更社</text>
+			<text class="leader_job job1">纪委书记、监察专员 </text>
+			<text class="leader_name">宁焕侠</text>
+
+		</view>
+		<view class="leader_1">
+			<text class="leader_job">党委副书记 </text>
+			<text class="leader_name"> 张新柱​  ​孙冰红  ​宁焕侠 </text>
+			<text class="leader_job">总会计师 </text>
+			<text class="leader_name">冯智纲</text>
+
+		</view>
+		<view class="leader_1">
+			<text class="leader_job">校长   </text>
+			<text class="leader_name">  范九伦</text>
+			<text class="leader_job job2">副校长  </text>
+			<text class="leader_name"> 安增旺  巩稼民  卢光跃  郑大远</text>
+		</view>
+
+	</view>
+</view>
+<!-- 历任领导 -->
+<view class="index_news">
+	<view class="news_title">
+		<text>······历任领导······</text>
+	</view>
+	<view class="container">
+		<view class="item">
+			<view class="item_icon">
+				<image src="{{base}}{{lists[0].avatar}}" mode="widthFix" />
+			</view>
+			<view class="item_detail">
+				<view class="detail_title">{{lists[0].fullName}}</view>
+				<view class="detail_job">
+					{{lists[0].position}}
+				</view>
+				<view class="detail_data">{{lists[0].workingTime}} </view>
+			</view>
+		</view>
+
+		<view class="item">
+			<view class="item_icon">
+				<image src="{{base}}{{lists[1].avatar}}" mode="widthFix" />
+			</view>
+			<view class="item_detail">
+				<view class="detail_title">{{lists[1].fullName}}</view>
+				<view class="detail_job">
+				{{lists[1].position}}
+				</view>
+				<view class="detail_data">{{lists[1].workingTime}} </view>
+			</view>
+		</view>
+	</view>
+<navigator url="../leader/index"><view class="more" >查看更多</view></navigator>
+</view>
+
+<!-- 历史沿革 -->
+<view class="index_news history">
+	<view class="news_title">
+		<text>······历史沿革······</text>
+	</view>
+	<navigator url="../history/index">
+	<view class="news_content">
+		<view class="news_img">
+			<image src="{{base}}{{imgUrl[2]}}" mode="widthFix" />
+		</view>
+		<view class="news_detail">
+			<view class="detail_title">历史沿革</view>
+			<view class="detail_main">
+				1950年初，国家进入全面经济恢复时期，
+				为了迅速发展人民邮电事业，急需培养邮电
+				业务管理和技术人才，西北邮电管理局创办
+				了陕西省邮电人员训练班和甘肃省邮电人员
+				训练班...... </view>
+		</view>
+	</view>
+	</navigator>
+</view>
+

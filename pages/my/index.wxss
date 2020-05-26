@@ -1,0 +1,70 @@
+/**index.wxss**/
+
+.container {
+    background-image: url("https://s1.ax1x.com/2020/03/28/GkM0nx.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200rpx;
+}
+
+.user-infomation {
+    background-color: #fff;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 50%;
+}
+
+.userinfo-school {
+    margin: 80rpx 0;
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+}
+
+.userinfo-unschool {
+    color: #ccc;
+}
+
+.userinfo-nickname {
+    color: #ffff;
+}
+
+.usermotto {
+    margin-top: 200px;
+}
+
+.user-infomation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 0.1rpx solid #ccc;
+}
+
+.box {
+    display: inline-block;
+    margin-left: 20rpx;
+}
+
+.box text {
+    color: #636363;
+    font-size: 24rpx;
+}
+
+.box .boximg {
+    display: inline-block;
+    width: 46rpx;
+    height: 40rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
+}

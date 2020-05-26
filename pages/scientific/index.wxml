@@ -1,0 +1,48 @@
+<view>
+	<view>
+		<image src="{{base}}{{lists.pimg[0].imgUrl}}" mode="widthFix" />
+	</view>
+	<!-- 详情 -->
+	<view class="contents">
+		<view class="header">
+			<view class="title">{{lists.projectName}}项目简介</view>
+			<view>
+				<view class="set middle" bindtap="handleToComment">
+					<view class="share" bindtap="handleChange">
+						<image src="../../image/icon/message.png" mode="widthFix" />
+					</view>
+					<text>{{lists.commentNums}}</text>
+				</view>
+
+				<view class="set left" bindtap="handlelikeStart">
+					<view class="share">
+						<image class="img" src="{{!!status?url2:url1}}" mode="widthFix" />
+					</view>
+					<text>{{lists.likeNums}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="content">
+			{{lists.leaderIntroduction}}
+		</view>
+		<view class="more" bindtap="clickMore" hidden="{{!isShow}}">
+			<text class="more_title">查看更多 </text>
+			<view class="arrow" />
+		</view>
+	</view>
+
+	<!-- 团队 -->
+	<view class="teamContent">
+		<image src="{{base}}{{lists.timg[0].imgUrl}}" mode="widthFix" />
+		<view class="team_style">团队风采</view>
+		<view class="team_detail">
+			<view class="team_mainPerson">总负责人:{{lists.pojectLeader}}</view>
+			<view>负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情介绍负责人详情
+			</view>
+		</view>
+	</view>
+</view>
+<view class="contactMe">
+	<view class="btn">联系我们</view>
+</view>
+

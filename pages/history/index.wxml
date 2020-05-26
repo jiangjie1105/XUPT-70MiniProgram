@@ -1,0 +1,10 @@
+<view class="container">
+	<image src="{{imgUrl}}" mode="widthFix" />
+</view>
+<view class="contents">
+    <view class="title">历史沿革</view>
+	<view class="content">
+    {{content}}
+        </view>
+</view>
+
